@@ -55,12 +55,13 @@ public class CoffeeMachine {
         System.out.println("Máquina reabastecida com sucesso.");
     }
 
-    public void getStatus(){
-        System.out.println("Nível de café na máquina: " + coffee + "g.");
-        System.out.println("Nível de água na máquina: " + water + "ml.");
-    }
-
     public int getCoffee() { return coffee; }
 
     public int getWater() { return water; }
+
+    public void getStatus(){
+        System.out.println("Nível de café na máquina: " + getCoffee() + "g.");
+        System.out.println("Nível de água na máquina: " + getWater() + "ml.");
+    }
+
 }
